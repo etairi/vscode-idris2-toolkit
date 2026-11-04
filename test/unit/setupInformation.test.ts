@@ -404,7 +404,7 @@ suite('toolchain/setupInfo', () => {
           onDidChange: new Emitter<void>().event,
         },
         trust: { isTrusted: true, onDidGrant: new Emitter<void>().event },
-        extension: { id: 'etairi.idris2-toolkit', version: '0.0.1', issuesUrl: 'https://github.com/etairi/vscode-idris2/issues' },
+        extension: { id: 'etairi.idris2-toolkit', version: '0.0.1', issuesUrl: 'https://github.com/etairi/vscode-idris2-toolkit/issues' },
         os: { platform: 'darwin', release: '25.0.0', arch: 'arm64', nodeVersion: 'v22.20.0' },
         log: { trace: () => undefined, debug: () => undefined, info: () => undefined, warn: () => undefined, error: () => undefined },
       });
@@ -439,7 +439,7 @@ suite('toolchain/setupInfo', () => {
       assert.strictEqual(t.clipboard.length, 1);
       assert.ok(t.clipboard[0].includes('<summary>Setup Information</summary>'));
       assert.match(t.messages[0], /copied to the clipboard/);
-      assert.deepStrictEqual(t.opened, ['https://github.com/etairi/vscode-idris2/issues']);
+      assert.deepStrictEqual(t.opened, ['https://github.com/etairi/vscode-idris2-toolkit/issues']);
     });
   });
 });

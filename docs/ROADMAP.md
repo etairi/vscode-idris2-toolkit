@@ -1,7 +1,7 @@
 # vscode-idris2 — roadmap
 
 Status: final planning document, 2026-09-23. Extension `idris2-toolkit` (id `etairi.idris2-toolkit`,
-in the repository `vscode-idris2`), display name "Idris 2 Toolkit", publisher `etairi` (named so since
+in the repository `vscode-idris2-toolkit`), display name "Idris 2 Toolkit", publisher `etairi` (named so since
 2026-11-04, §9).
 Companion documents: `landscape.md` (the verified survey and source of truth for everything it
 covers) and `ARCHITECTURE.md` (the technical design that every milestone below is built to).
@@ -1421,7 +1421,8 @@ retiring every backend risk before UI work is preferred.
   with the other Idris extensions' but links (8-word runs, compared 2026-11-04), and its URLs are this
   repository's, which no other extension names.
 - **The new identity**: `etairi.idris2-toolkit`, display name "Idris 2 Toolkit", a new description and
-  README opening. The icon stays the logo with gears on a white tile for now (the user's choice, to see
+  README opening, and the repository renamed `vscode-idris2-toolkit` so that no link carries the removed
+  extension's name (GitHub redirects the old links). The icon stays the logo with gears on a white tile for now (the user's choice, to see
   what the review says): it still contains the Idris logo, which the review may name again. Original
   drawings, the logo inverted on its own red, and the logo in a gear were drawn and not chosen.
 

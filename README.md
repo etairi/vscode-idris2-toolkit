@@ -81,7 +81,7 @@ The [user guide](docs/guide.md) describes each feature in detail.
 This extension is not yet published under this name, so build it from source (Node.js 24):
 
 ```sh
-git clone https://github.com/etairi/vscode-idris2 && cd vscode-idris2
+git clone https://github.com/etairi/vscode-idris2-toolkit && cd vscode-idris2-toolkit
 npm ci && npm run package
 code --install-extension idris2-toolkit-0.1.0.vsix
 ```
@@ -215,7 +215,7 @@ Build integration, literate Markdown and LaTeX, Unicode input: see
 
 ## Contributing
 
-Issues and pull requests are welcome on [GitHub](https://github.com/etairi/vscode-idris2); see
+Issues and pull requests are welcome on [GitHub](https://github.com/etairi/vscode-idris2-toolkit); see
 [CONTRIBUTING.md](CONTRIBUTING.md) for building and testing.
 
 ## License

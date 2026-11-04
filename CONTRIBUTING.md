@@ -2,7 +2,7 @@
 
 Thank you for helping. This file explains how to build, test and debug the extension, and where
 the design lives. Bug reports and feature requests go to the
-[issue tracker](https://github.com/etairi/vscode-idris2/issues); **Idris 2: Report Issue…**
+[issue tracker](https://github.com/etairi/vscode-idris2-toolkit/issues); **Idris 2: Report Issue…**
 fills in the setup information for you.
 
 ## Project documents

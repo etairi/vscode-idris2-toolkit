@@ -41,7 +41,8 @@ Guidance for Claude Code when working in this repository (a VS Code extension fo
   was verified. Never upgrade an `[open]`, `[untested]` or `[doc]` fact to `[live]` without
   actually running it.
 - Decisions taken by the user on 2026-09-26 (recorded in `docs/ROADMAP.md` §9): MIT licence
-  (`LICENSE`, copyright Erkan Tairi); repository `github.com/etairi/vscode-idris2`; publisher
+  (`LICENSE`, copyright Erkan Tairi); repository `github.com/etairi/vscode-idris2` (renamed
+  `vscode-idris2-toolkit` on 2026-11-04; GitHub redirects the old links); publisher
   `etairi` (created by the user on the Marketplace; the first pre-release, 0.1.0, was published there
   by the user on 2026-10-01, and on Open VSX the same day (namespace `etairi`, unverified until the user
   claims it), tag `v0.1.0`, `CONTRIBUTING.md`, *Releasing*; Microsoft removed it from the Marketplace
@@ -52,7 +53,8 @@ Guidance for Claude Code when working in this repository (a VS Code extension fo
   extension was `etairi.idris2-language-tools`, display name "Idris 2 Language Tools", and since
   2026-11-04, after Microsoft's review found that the removed listing duplicated another extension's
   content (ROADMAP §9), it is `etairi.idris2-toolkit`, display name "Idris 2 Toolkit", at version 0.1.0
-  until it is published afresh; the repository stays `vscode-idris2`. The icon
+  until it is published afresh; the repository was renamed `vscode-idris2-toolkit` with it (the local
+  checkout keeps its folder name). The icon
   `media/icon.png` is the Idris logo in its own colours with two gears beside it, on a white tile
   (`media/icon.svg` over the unmodified `media/idris-logo-256.png` = Idris 2 `icons/idris-256x256.png`
   at `3a91594`; neither is packaged; never the VS Code icon, which its brand guidelines rule out);
