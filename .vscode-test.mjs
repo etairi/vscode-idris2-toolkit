@@ -97,15 +97,19 @@ const root = dirname(fileURLToPath(import.meta.url));
 // that path reaches 103 characters on macOS, 107 on Linux [src: `main.js` of 1.139.1], and
 // listen() fails with EINVAL beyond the OS limit (F17). Every profile below is checked against
 // the stricter bound, so a long checkout path fails here with a clear message instead.
+// VSCODE_TEST_PROFILES puts the profiles in a directory of its own: CI checks out into
+// `<runner>/work/<repository>/<repository>`, which the repository's name makes too long.
 const IPC_HANDLE_LIMIT = 103;
+const profilesRoot = process.env.VSCODE_TEST_PROFILES ? resolve(process.env.VSCODE_TEST_PROFILES) : resolve(root, '.vscode-test');
 
 function userDataDir(name) {
-  const dir = resolve(root, '.vscode-test', name);
+  const dir = resolve(profilesRoot, name);
   const handle = resolve(dir, 'x.xx-main.sock');
   if (process.platform !== 'win32' && Buffer.byteLength(handle) >= IPC_HANDLE_LIMIT) {
     throw new Error(
       `The IPC socket path ${handle} would be ${Buffer.byteLength(handle)} bytes, ` +
-        `at or above VS Code's limit of ${IPC_HANDLE_LIMIT} (F17): move the checkout to a shorter path.`,
+        `at or above VS Code's limit of ${IPC_HANDLE_LIMIT} (F17): move the checkout to a shorter path, ` +
+        'or set VSCODE_TEST_PROFILES to a short directory for the profiles.',
     );
   }
   return dir;
@@ -148,7 +152,7 @@ const FAKE_LSP_ENV = {
 // fake-tools idris2-lsp, which answers --version only.
 const FAKE_LSP_SERVER = resolve(root, 'test/fake-lsp/bin/idris2-lsp');
 
-/** Creates (or resets) the profile `.vscode-test/<name>` with `settings` as its user settings. */
+/** Creates (or resets) the profile `<name>` in `.vscode-test` (or VSCODE_TEST_PROFILES) with `settings` as its user settings. */
 function profile(name, settings) {
   const dir = userDataDir(name);
   mkdirSync(resolve(dir, 'User'), { recursive: true });

@@ -1021,7 +1021,8 @@ Conventions already in force:
   `user-data-e2e`), rewritten before every run so that
   settings a test changes never leak into another suite, and fails early if a profile's IPC
   socket path would reach the 103-character limit (F17 in `docs/ROADMAP.md` §0); the
-  protection is the short checkout path. It also passes `--force-disable-user-env`, so the
+  protection is the short checkout path, or `VSCODE_TEST_PROFILES`, a short directory for the
+  profiles, which CI sets. It also passes `--force-disable-user-env`, so the
   Extension Host sees the suite's environment rather than the developer's login-shell `PATH`
   (without it the `toolchain-path` suite did not see the prepended fake-tools directory,
   observed 2026-09-27).

@@ -58,6 +58,10 @@ jobs:
     name: ubuntu-latest
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    # The test profiles go to a short directory: the checkout path holds the repository's name twice,
+    # which puts VS Code's IPC socket past its length limit (F17, .vscode-test.mjs).
+    env:
+      VSCODE_TEST_PROFILES: /tmp/vt
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -108,6 +112,9 @@ jobs:
     name: macos-latest
     runs-on: macos-latest
     timeout-minutes: 30
+    # As on Linux (F17).
+    env:
+      VSCODE_TEST_PROFILES: /tmp/vt
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7

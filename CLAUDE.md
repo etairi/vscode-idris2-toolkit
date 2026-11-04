@@ -201,7 +201,9 @@ npm run package       # vsce package (vscode:prepublish: check-types, lint, prod
   1.13-main.sock` when the user-data-dir path exceeds 103 characters. `.vscode-test.mjs` passes
   `--user-data-dir=<checkout>/.vscode-test/user-data` explicitly, which is also test-electron's
   default; the protection is the short checkout path, so keep the checkout short and never move
-  that directory somewhere long.
+  that directory somewhere long. `VSCODE_TEST_PROFILES` puts the profiles elsewhere: CI sets it to
+  `/tmp/vt`, since its checkout path holds the repository's name twice (2026-11-04: the rename to
+  `vscode-idris2-toolkit` took it to 105 bytes).
 - On this machine: Node v24.13.0, npm 11.11.0, Idris 2 0.8.0 at `/opt/homebrew/bin/idris2` (the
   `idris2` on `PATH`), VS Code 1.139 with the CLI at
   `/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code` (not on PATH).
