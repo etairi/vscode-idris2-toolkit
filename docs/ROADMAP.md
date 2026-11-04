@@ -1,8 +1,8 @@
 # vscode-idris2 — roadmap
 
-Status: final planning document, 2026-09-23. Extension `idris2-language-tools` (id
-`etairi.idris2-language-tools`, in the repository `vscode-idris2`), display name "Idris 2 Language
-Tools", publisher `etairi` (named so since 2026-10-30, §9).
+Status: final planning document, 2026-09-23. Extension `idris2-toolkit` (id `etairi.idris2-toolkit`,
+in the repository `vscode-idris2`), display name "Idris 2 Toolkit", publisher `etairi` (named so since
+2026-11-04, §9).
 Companion documents: `landscape.md` (the verified survey and source of truth for everything it
 covers) and `ARCHITECTURE.md` (the technical design that every milestone below is built to).
 
@@ -1406,6 +1406,24 @@ retiring every backend risk before UI work is preferred.
 ---
 
 ## 9. Open questions and decisions needed from the user
+
+**Decided by the user on 2026-11-04, after Microsoft's review**
+
+- **What Microsoft found.** Support answered the request to review the block of publisher `etairi`
+  (2026-11-04): "the listing duplicates content from another extension, which violates Marketplace
+  Terms of Use and Publisher Agreement", and asked for a clear update on the changes, confirming that
+  the extension is distinct in icon, display name, description, overview and URLs, with proof. The
+  Terms of Use forbid content that "is not duplicative to content that has been originally published
+  by Microsoft or a Publisher on the Sites" (§4 vi, September 2025) [doc]. The removed listing's icon
+  was the Idris logo itself, which `zjhmale.Idris` and `j-nava.idris2-language-support` also show as
+  their icons, and its description began "Idris 2 language support", the display name of
+  `j-nava.idris2-language-support` [live, the gallery API, 2026-11-04]. Its README shares no passage
+  with the other Idris extensions' but links (8-word runs, compared 2026-11-04), and its URLs are this
+  repository's, which no other extension names.
+- **The new identity**: `etairi.idris2-toolkit`, display name "Idris 2 Toolkit", a new description and
+  README opening. The icon stays the logo with gears on a white tile for now (the user's choice, to see
+  what the review says): it still contains the Idris logo, which the review may name again. Original
+  drawings, the logo inverted on its own red, and the logo in a gear were drawn and not chosen.
 
 **Decided by the user on 2026-10-30, before M8**
 

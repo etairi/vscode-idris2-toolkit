@@ -1,7 +1,7 @@
 {
-  "name": "idris2-language-tools",
-  "displayName": "Idris 2 Language Tools",
-  "description": "Idris 2 language support: the compiler's errors and warnings, types and documentation on hover, go to definition, completion, semantic highlighting, inlay hints, evaluation of expressions, interactive editing with holes (case split, proof search, generate definition and more) and a list of holes, syntax highlighting, editing support, snippets and toolchain detection; idris2-lsp can serve a project instead of the compiler's IDE mode.",
+  "name": "idris2-toolkit",
+  "displayName": "Idris 2 Toolkit",
+  "description": "Interactive Idris 2 development with the compiler: errors as you type, types and documentation on hover, case split, proof search and the other hole commands, a goal panel, a REPL and evaluation of expressions. A project can use idris2-lsp instead of the compiler's IDE mode.",
   "version": "0.1.0",
   "publisher": "etairi",
   "license": "MIT",

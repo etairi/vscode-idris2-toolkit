@@ -43,7 +43,7 @@ fills in the setup information for you.
 npm ci
 npm run compile      # type-check, lint, bundle → dist/
 npm run watch        # the default build task in VS Code
-npm run package      # vsce package → idris2-language-tools-<version>.vsix
+npm run package      # vsce package → idris2-toolkit-<version>.vsix
 ```
 
 In VS Code, **Run Extension** (F5) starts an Extension Development Host with the bundle from
@@ -210,7 +210,7 @@ is declared stable.
    `npm run test:unit`, `npm test`, `IDRIS2_E2E=1 npm run test:e2e`), commit, push and wait for CI.
 2. Build the package: `npm run package -- --pre-release` for a pre-release (`vsce publish
    --pre-release` refuses a package that was not built with `--pre-release`), `npm run package`
-   for a release. It writes `idris2-language-tools-<version>.vsix`; `npx vsce ls` lists what it holds.
+   for a release. It writes `idris2-toolkit-<version>.vsix`; `npx vsce ls` lists what it holds.
 3. Visual Studio Marketplace, publisher `etairi` (created once at
    <https://marketplace.visualstudio.com/manage> with a Microsoft account; the ID is fixed). The
    extension's first name, `vscode-idris2`, cannot be published there again: Microsoft removed it
@@ -218,7 +218,7 @@ is declared stable.
 
    ```sh
    npx vsce login etairi        # once; asks for a personal access token
-   npx vsce publish --pre-release --packagePath idris2-language-tools-<version>.vsix
+   npx vsce publish --pre-release --packagePath idris2-toolkit-<version>.vsix
    ```
 
    The token comes from Azure DevOps (dev.azure.com): *User settings → Personal access tokens*,
@@ -233,12 +233,12 @@ is declared stable.
    and `npx ovsx create-namespace etairi -p <token>`):
 
    ```sh
-   npx ovsx publish idris2-language-tools-<version>.vsix --pre-release -p <token>
+   npx ovsx publish idris2-toolkit-<version>.vsix --pre-release -p <token>
    ```
 
 5. Tag the published commit: `git tag v<version> && git push origin v<version>`. `v0.1.0` is
    taken by the release under the first name (`4de2082`), so tag this name's 0.1.0
-   `idris2-language-tools-v0.1.0`.
+   `idris2-toolkit-v0.1.0`.
 
 A release is the same without `--pre-release`, on an even minor version.
 

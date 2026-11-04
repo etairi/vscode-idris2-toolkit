@@ -21,7 +21,7 @@ import type { EditingCommandId, EditingOutcome } from '../../src/features/editin
 import type { EvaluationOutcome } from '../../src/features/eval/register';
 import type { ToolchainSnapshot } from '../../src/toolchain/types';
 
-export const EXTENSION_ID = 'etairi.idris2-language-tools';
+export const EXTENSION_ID = 'etairi.idris2-toolkit';
 
 /** Activates the extension (a no-op when a document already did) and returns its test API. */
 export async function extensionApi(): Promise<TestApi> {

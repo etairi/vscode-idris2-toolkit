@@ -49,8 +49,10 @@ Guidance for Claude Code when working in this repository (a VS Code extension fo
   `j-nava.idris2-language-support` was uninstalled from the user's VS Code); grammar written
   fresh, using existing grammars only as reference; implementation order M0 → M1 → M2 with one
   commit per milestone. Identity (decided 2026-10-30, after Microsoft's removal; ROADMAP §9): the
-  extension is `etairi.idris2-language-tools`, display name "Idris 2 Language Tools", at version
-  0.1.0 until it is published afresh; the repository stays `vscode-idris2`. The icon
+  extension was `etairi.idris2-language-tools`, display name "Idris 2 Language Tools", and since
+  2026-11-04, after Microsoft's review found that the removed listing duplicated another extension's
+  content (ROADMAP §9), it is `etairi.idris2-toolkit`, display name "Idris 2 Toolkit", at version 0.1.0
+  until it is published afresh; the repository stays `vscode-idris2`. The icon
   `media/icon.png` is the Idris logo in its own colours with two gears beside it, on a white tile
   (`media/icon.svg` over the unmodified `media/idris-logo-256.png` = Idris 2 `icons/idris-256x256.png`
   at `3a91594`; neither is packaged; never the VS Code icon, which its brand guidelines rule out);

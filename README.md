@@ -1,11 +1,12 @@
 <p align="center">
-  <img src="media/icon.png" alt="Idris 2 Language Tools icon" width="112">
+  <img src="media/icon.png" alt="Idris 2 Toolkit icon" width="112">
 </p>
 
-# Idris 2 Language Tools
+# Idris 2 Toolkit
 
-Language support for [Idris 2](https://www.idris-lang.org/), a purely functional programming
-language with first-class dependent types.
+Interactive development for [Idris 2](https://www.idris-lang.org/) with the compiler: its errors as you
+type, types and documentation on hover, and the commands of hole-driven development, such as case
+split, proof search and generate definition, with a goal panel and a REPL.
 
 > **Preview.** Early development, not yet published under this name. Build and run tasks come next —
 > see the [roadmap](docs/ROADMAP.md).
@@ -82,11 +83,8 @@ This extension is not yet published under this name, so build it from source (No
 ```sh
 git clone https://github.com/etairi/vscode-idris2 && cd vscode-idris2
 npm ci && npm run package
-code --install-extension idris2-language-tools-0.1.0.vsix
+code --install-extension idris2-toolkit-0.1.0.vsix
 ```
-
-An earlier version is on [Open VSX](https://open-vsx.org/extension/etairi/vscode-idris2) as
-`etairi.vscode-idris2`.
 
 Disable other Idris extensions while you use this one: they claim the same file types.
 
@@ -146,7 +144,7 @@ title bar of an Idris file.
 ## Settings
 
 The ones you are most likely to change; all of them are in the Settings UI (search for
-`@ext:etairi.idris2-language-tools`), and the [guide](docs/guide.md#settings-in-depth) explains the trade-offs.
+`@ext:etairi.idris2-toolkit`), and the [guide](docs/guide.md#settings-in-depth) explains the trade-offs.
 
 | Setting | Default | Description |
 |---|---|---|

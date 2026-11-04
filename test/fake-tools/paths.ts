@@ -8,15 +8,15 @@ import * as path from 'path';
 
 export type FakeTool = 'idris2' | 'idris2-lsp' | 'pack';
 
-/** The checkout: the nearest directory above this file whose package.json is idris2-language-tools'. */
+/** The checkout: the nearest directory above this file whose package.json is idris2-toolkit'. */
 export function repoRoot(): string {
   for (let dir = __dirname; ; dir = path.dirname(dir)) {
     const manifest = path.join(dir, 'package.json');
-    if (fs.existsSync(manifest) && JSON.parse(fs.readFileSync(manifest, 'utf8')).name === 'idris2-language-tools') {
+    if (fs.existsSync(manifest) && JSON.parse(fs.readFileSync(manifest, 'utf8')).name === 'idris2-toolkit') {
       return dir;
     }
     if (path.dirname(dir) === dir) {
-      throw new Error(`no idris2-language-tools package.json above ${__dirname}`);
+      throw new Error(`no idris2-toolkit package.json above ${__dirname}`);
     }
   }
 }

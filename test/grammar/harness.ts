@@ -60,10 +60,10 @@ interface Manifest {
   };
 }
 
-const PACKAGE_NAME = 'idris2-language-tools';
+const PACKAGE_NAME = 'idris2-toolkit';
 
 /**
- * The directory of the package.json named "idris2-language-tools", found by walking up from this file.
+ * The directory of the package.json named "idris2-toolkit", found by walking up from this file.
  * The walk (rather than a fixed `../..`) keeps the harness working from any output directory
  * inside the checkout: `out/test/grammar/` (`npm run test:grammar`) or a private
  * `tsc --outDir <dir>` inside it.

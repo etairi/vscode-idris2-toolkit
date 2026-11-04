@@ -34,7 +34,7 @@ import { GOAL_PANEL_VIEW_TYPE } from '../../src/features/goalPanel/host';
 // them), Restricted Mode, commands, menus, views, keybindings and the walkthrough. Whether each
 // command is also *registered* at run time is an integration question (test/integration/).
 
-const PACKAGE_NAME = 'idris2-language-tools';
+const PACKAGE_NAME = 'idris2-toolkit';
 
 function repoRoot(): string {
   for (let dir = __dirname; ; dir = path.dirname(dir)) {
@@ -257,8 +257,8 @@ function readAllSettings(value: (key: string) => unknown): { keys: string[]; set
 suite('package.json (M1–M5 contributions)', () => {
   suite('identity (ROADMAP §9, 2026-10-30: after the Marketplace removal)', () => {
     test('its own names, and an icon that is a modified logo: a PNG of at least 128 px, not the logo itself, whose sources are not packaged', () => {
-      assert.strictEqual(manifest.name, 'idris2-language-tools');
-      assert.strictEqual(manifest.displayName, 'Idris 2 Language Tools');
+      assert.strictEqual(manifest.name, 'idris2-toolkit');
+      assert.strictEqual(manifest.displayName, 'Idris 2 Toolkit');
       const icon = fs.readFileSync(path.join(root, manifest.icon));
       assert.ok(!icon.equals(fs.readFileSync(path.join(root, 'media/idris-logo-256.png'))), 'not the logo itself');
       assert.strictEqual(icon.toString('latin1', 1, 4), 'PNG');

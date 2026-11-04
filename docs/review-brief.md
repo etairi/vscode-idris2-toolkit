@@ -109,7 +109,8 @@ Decided by the user (ROADMAP §9), so report one only with a new argument:
   default; native Windows out of scope.
 - `shadow.ipkg` in the shadow directory, for now; check while typing on by default;
   `idris2.lsp.logSeverity` `info`.
-- The identity `etairi.idris2-language-tools`, no "unofficial" statement, the logo with gears for now.
+- The identity `etairi.idris2-toolkit` (since 2026-11-04, after Microsoft's review), no "unofficial"
+  statement, the logo with gears for now.
 - Plain TypeScript in the webview for now; the goal panel opened by hand.
 - Query and the lenses send expressions, `:t` and `:doc`, on the shared `eval` session; Q23 covers Query
   and a single Run; Run all asks first.

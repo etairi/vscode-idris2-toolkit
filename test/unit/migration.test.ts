@@ -8,11 +8,11 @@ import { BAMBOO_KEY_MAP, planMigration, type FoundValue } from '../../src/featur
 function repoRoot(): string {
   for (let dir = __dirname; ; dir = path.dirname(dir)) {
     const candidate = path.join(dir, 'package.json');
-    if (fs.existsSync(candidate) && (JSON.parse(fs.readFileSync(candidate, 'utf8')) as { name?: string }).name === 'idris2-language-tools') {
+    if (fs.existsSync(candidate) && (JSON.parse(fs.readFileSync(candidate, 'utf8')) as { name?: string }).name === 'idris2-toolkit') {
       return dir;
     }
     if (path.dirname(dir) === dir) {
-      throw new Error(`no idris2-language-tools package.json above ${__dirname}`);
+      throw new Error(`no idris2-toolkit package.json above ${__dirname}`);
     }
   }
 }

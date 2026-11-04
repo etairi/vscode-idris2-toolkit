@@ -1,14 +1,13 @@
 # Changelog
 
-All notable changes to the "Idris 2 Language Tools" extension (`idris2-language-tools`) are
+All notable changes to the "Idris 2 Toolkit" extension (`idris2-toolkit`) are
 documented in this file. The format follows [Keep a Changelog](https://keepachangelog.com/); the
 extension's version is independent of Idris 2 releases (`docs/ROADMAP.md` §7.4).
 
 ## [0.1.0] - Unreleased
 
 The first pre-release under this name. It supports macOS and Linux and was tested with Idris 2
-0.8.0; on Windows, use VS Code with WSL, where the extension runs on Linux. An earlier version is
-on Open VSX as `etairi.vscode-idris2`.
+0.8.0; on Windows, use VS Code with WSL, where the extension runs on Linux.
 
 ### Added
 
