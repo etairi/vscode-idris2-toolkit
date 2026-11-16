@@ -50,8 +50,8 @@ The first pre-release under this name. It supports macOS and Linux and was teste
   Holes view under the same rules as in IDE mode. Evaluate Selection, documentation and inlay hints
   are not available there, and say so.
 - **Restart Language Server**, **Stop Language Server**, **Show Language Server Output**, the
-  server's eight options as `idris2.lsp.*` settings, and an offer to copy the settings of the
-  `bamboo.idris2-lsp` extension. A file without an `.ipkg` under `lsp` gets a one-time notification
+  server's eight options as `idris2.lsp.*` settings, and an offer to copy the settings of another
+  extension for the same server. A file without an `.ipkg` under `lsp` gets a one-time notification
   that offers IDE mode for its folder.
 - The language server is checked against the `idris2` of its own installation (pack's), not the one
   on `PATH`. Its log level defaults to `info`, which does not log your files' text
@@ -113,9 +113,9 @@ The first pre-release under this name. It supports macOS and Linux and was teste
   commands for Idris 2, pack and idris2-lsp that type the command into a terminal without running
   it; the **Get Started with Idris 2** walkthrough. Every file is matched to its `.ipkg` package
   the way the compiler finds it, also above the folder you opened.
-- **Language support** (M0). Highlighting for Idris 2, literate Idris (`.lidr`) and `.ipkg` files,
-  following the compiler's own lexer; comment toggling, bracket matching, indentation on Enter,
-  indentation-based folding and **Expand Selection**; snippets; the Help commands **Show
+- **Highlighting and editing** (M0). Highlighting for Idris 2, literate Idris (`.lidr`) and `.ipkg`
+  files, following the compiler's own lexer; comment toggling, bracket matching, indentation on
+  Enter, indentation-based folding and **Expand Selection**; snippets; the Help commands **Show
   Output**, **Open Settings** and **Open Idris 2 Documentation**; editor defaults for Idris files.
 - **Workspace Trust.** In Restricted Mode the extension runs no program; highlighting and editing
   support keep working.

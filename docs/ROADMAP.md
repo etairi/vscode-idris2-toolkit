@@ -1407,6 +1407,29 @@ retiring every backend risk before UI work is preferred.
 
 ## 9. Open questions and decisions needed from the user
 
+**Decided by the user on 2026-11-15, after Microsoft's second answer**
+
+- **What Microsoft answered** (2026-11-15, to the update of 2026-11-04): "Please ensure that all aspects of
+  the extension, including the icon, name, description, overview, and related URLs, are unique and clearly
+  distinct from the other extensions. Once the necessary changes have been made, please reply to this email
+  for further review." It names no element.
+- **What the listing still shared** [live, the gallery API, 2026-11-15; the Idris extensions it lists are
+  `zjhmale.Idris`, `meraymond.idris-vscode`, `archaeron.idris-highlighting`,
+  `j-nava.idris2-language-support` and `bamboo.idris2-lsp`; Open VSX lists only meraymond's]: the icon's
+  Idris logo, which is the whole icon of `zjhmale.Idris` and `j-nava.idris2-language-support`; the
+  description's last sentence, which named idris2-lsp, the display name of `bamboo.idris2-lsp`; the README
+  and the CHANGELOG, which named `bamboo.idris2-lsp` (the offer to copy its settings); the CHANGELOG
+  heading "Language support", the words of j-nava's display name and of two descriptions. The name, the
+  URLs and the README's text are this extension's own: no run of 8 words in common with any other README,
+  and one of 5 ("the name under the cursor", in zjhmale's).
+- **Decision.** The icon stays (the user: the drawings without the logo, the words "Idris 2" in open
+  fonts and a "2" drawn as two tapered strokes, said nothing of Idris, and the logo may not be what the
+  review means). The description ends "A project can use a language server instead of the compiler's IDE
+  mode."; the README and the CHANGELOG name no other extension (the guide still names bamboo's where it
+  says which settings are copied; `docs/` is not part of the listing); the CHANGELOG heading reads
+  "Highlighting and editing". The reply asks Microsoft which aspect is not distinct, and whether the logo
+  must leave the icon.
+
 **Decided by the user on 2026-11-04, after Microsoft's review**
 
 - **What Microsoft found.** Support answered the request to review the block of publisher `etairi`

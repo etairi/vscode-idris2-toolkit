@@ -58,8 +58,7 @@ split, proof search and generate definition, with a goal panel and a REPL.
   IDE mode stays the default; one program serves a project, never both
 - The server's hover, completion, signature help, definition, Outline, highlighting and quick fixes;
   the editing commands and the Holes view under the same rules as in IDE mode
-- **Restart / Stop Language Server**, **Show Language Server Output**; an offer to copy the settings
-  of the `bamboo.idris2-lsp` extension
+- **Restart / Stop Language Server**, **Show Language Server Output**
 
 **Toolchain**
 - Finds `idris2`, `idris2-lsp` and `pack`; **Show Setup Information** reports what was found
