@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the "Idris 2 Toolkit" extension (`idris2-toolkit`) are
+All notable changes to the "Idris Toolkit" extension (`idris2-toolkit`) are
 documented in this file. The format follows [Keep a Changelog](https://keepachangelog.com/); the
 extension's version is independent of Idris 2 releases (`docs/ROADMAP.md` §7.4).
 
@@ -119,7 +119,8 @@ The first pre-release under this name. It supports macOS and Linux and was teste
   Output**, **Open Settings** and **Open Idris 2 Documentation**; editor defaults for Idris files.
 - **Workspace Trust.** In Restricted Mode the extension runs no program; highlighting and editing
   support keep working.
-- Extension icon: the Idris logo with two gears beside it (BSD-3, see `THIRD_PARTY_NOTICES.md`).
+- Extension icon: the Idris logo standing in an open toolbox, with a wrench, a screwdriver and two gears
+  (BSD-3, see `THIRD_PARTY_NOTICES.md`).
 
 What each milestone built in detail, how it differs from the plan and how it was tested is
 recorded in `docs/as-built/`.

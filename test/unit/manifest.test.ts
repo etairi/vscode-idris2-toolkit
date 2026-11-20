@@ -258,7 +258,7 @@ suite('package.json (M1–M5 contributions)', () => {
   suite('identity (ROADMAP §9, 2026-10-30: after the Marketplace removal)', () => {
     test('its own names, and an icon that is a modified logo: a PNG of at least 128 px, not the logo itself, whose sources are not packaged', () => {
       assert.strictEqual(manifest.name, 'idris2-toolkit');
-      assert.strictEqual(manifest.displayName, 'Idris 2 Toolkit');
+      assert.strictEqual(manifest.displayName, 'Idris Toolkit');
       const icon = fs.readFileSync(path.join(root, manifest.icon));
       assert.ok(!icon.equals(fs.readFileSync(path.join(root, 'media/idris-logo-256.png'))), 'not the logo itself');
       assert.strictEqual(icon.toString('latin1', 1, 4), 'PNG');

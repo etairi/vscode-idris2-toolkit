@@ -6,7 +6,7 @@ The packaged extension contains the following third-party material.
 
 `media/icon.png` contains the file `icons/idris-256x256.png` of the Idris 2 repository,
 <https://github.com/idris-lang/Idris2>, at commit `3a915943fc2e7acd8bb2bdf7841d98ac62d501f8`,
-resized, on a tile of its own with two gears added. `dist/extension.js` contains a port of the lexer rules of the Idris 2 compiler
+resized, standing in an open toolbox with a wrench, a screwdriver and two gears, on a tile of its own. `dist/extension.js` contains a port of the lexer rules of the Idris 2 compiler
 (`src/core/idrisLexer.ts` in this repository). Both are distributed under the following licence.
 This extension is not affiliated with or endorsed by the Idris project or its authors.
 

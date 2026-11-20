@@ -122,7 +122,7 @@ that profile must stay under 103 characters, so keep the checkout at a short pat
   `scripts/build-language-configuration.mjs` (`npm run build:language-configuration`). Edit the
   generator, never the output; the tests fail if the output is out of date.
 - `media/icon.png` is rendered from `media/icon.svg`, which puts the unmodified Idris logo
-  `media/idris-logo-256.png` on a tile with two gears:
+  `media/idris-logo-256.png` in an open toolbox, with a wrench, a screwdriver and two gears:
   `rsvg-convert -w 256 -h 256 media/icon.svg -o media/icon.png`. Neither source is packaged. Keep
   the icon visibly different from the logo, and never add the VS Code icon, which Microsoft's
   [brand guidelines](https://code.visualstudio.com/brand) rule out for an extension

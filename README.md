@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="media/icon.png" alt="Idris 2 Toolkit icon" width="112">
+  <img src="media/icon.png" alt="Idris Toolkit icon" width="112">
 </p>
 
-# Idris 2 Toolkit
+# Idris Toolkit
 
 Interactive development for [Idris 2](https://www.idris-lang.org/) with the compiler: its errors as you
 type, types and documentation on hover, and the commands of hole-driven development, such as case

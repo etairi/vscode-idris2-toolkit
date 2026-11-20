@@ -1,8 +1,8 @@
 # vscode-idris2 — roadmap
 
 Status: final planning document, 2026-09-23. Extension `idris2-toolkit` (id `etairi.idris2-toolkit`,
-in the repository `vscode-idris2-toolkit`), display name "Idris 2 Toolkit", publisher `etairi` (named so since
-2026-11-04, §9).
+in the repository `vscode-idris2-toolkit`), display name "Idris Toolkit", publisher `etairi` (named so since
+2026-11-20, §9; "Idris 2 Toolkit" from 2026-11-04).
 Companion documents: `landscape.md` (the verified survey and source of truth for everything it
 covers) and `ARCHITECTURE.md` (the technical design that every milestone below is built to).
 
@@ -1356,9 +1356,9 @@ reuse; Idris 2 and idris2-lsp are BSD-licensed, compatible) or BSD-3 / Apache-2.
 meraymond's grammar is forked, keep its MIT copyright line; zjhmale's grammar is BSD with an
 "All rights reserved" header — avoid copying from it; if Lean's abbreviation table is ported,
 add the Apache-2.0 notice. Licence facts for the four extensions are as reported by
-plan-proof-ux/plan-ecosystem from their `LICENSE` files (not re-read here). The extension icon is a
-the Idris logo from the Idris 2 repository with two gears beside it (§9, 2026-10-30; the logo alone
-before that), redistributed under its BSD-3 licence with the notice in `THIRD_PARTY_NOTICES.md`,
+plan-proof-ux/plan-ecosystem from their `LICENSE` files (not re-read here). The extension icon is
+the Idris logo from the Idris 2 repository standing in an open toolbox with a wrench, a screwdriver and
+two gears (§9, 2026-11-20; with two gears beside it from 2026-10-30, the logo alone before that), redistributed under its BSD-3 licence with the notice in `THIRD_PARTY_NOTICES.md`,
 which also covers the port of the compiler's lexer. The licence's third clause forbids using the
 copyright holders' names to endorse the extension, so the README says it is not affiliated with
 the Idris project; asking the maintainers before publishing to the Marketplace (M15) is still
@@ -1406,6 +1406,28 @@ retiring every backend risk before UI work is preferred.
 ---
 
 ## 9. Open questions and decisions needed from the user
+
+**Decided by the user on 2026-11-20, after Microsoft's fourth answer**
+
+- **What Microsoft answered.** Third answer (pasted 2026-11-19): the description, overview and URLs are
+  fine, but "the icon still incorporates the same logo associated with the existing extension, and the
+  display name remains closely similar"; it asked for "a fully distinct icon" and a display name "clearly
+  distinguishable from the existing extension". The user asked it to reconsider, with this evidence [live,
+  the gallery API, 2026-11-19]: of the five Idris extensions, `zjhmale.Idris` (2017) and
+  `j-nava.idris2-language-support` (2023) show the same Idris logo, and every name has "Idris" in it; seven
+  Haskell extensions from six publishers show the Haskell logo, `alanz.vscode-hie-server` and
+  `mogeko.haskell-extension-pack` the very same icon file; five OCaml extensions from five publishers show
+  the camel. Fourth answer (2026-11-20): the icon's "design and pattern" must be "completely distinct", and
+  the display name and the description "clearly distinguishable from the existing extensions". The page
+  it links (the publishing guide, *Verify a publisher*) asks only for a unique name and display name, and
+  says nothing about icons or descriptions [doc, read 2026-11-20].
+- **Decision.** The logo stays in the icon and "Idris" in the name; the user tells Microsoft why. The display
+  name is "Idris Toolkit" (the ID stays `idris2-toolkit`); the icon puts the logo in an open toolbox, with a
+  wrench, a screwdriver and two gears (`media/icon.svg` over the unmodified `media/idris-logo-256.png`); the
+  description begins "The complete Idris 2 extension" and lists what it does beyond the others. Drawn and not
+  chosen: icons without the logo (an original dragon among others) and names without "Idris" (Dragonet,
+  Draig and others, all unused on both stores); three other compositions with the logo (crossed tools, gears
+  on a toolbox, the logo as a toolbox's emblem).
 
 **Decided by the user on 2026-11-15, after Microsoft's second answer**
 

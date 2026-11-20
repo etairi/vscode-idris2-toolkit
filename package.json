@@ -1,7 +1,7 @@
 {
   "name": "idris2-toolkit",
-  "displayName": "Idris 2 Toolkit",
-  "description": "Interactive Idris 2 development with the compiler: errors as you type, types and documentation on hover, case split, proof search and the other hole commands, a goal panel, a REPL and evaluation of expressions. A project can use a language server instead of the compiler's IDE mode.",
+  "displayName": "Idris Toolkit",
+  "description": "The complete Idris 2 extension: errors as you type, types and documentation on hover, a goal panel and a Holes view, case split, proof search and the other interactive edits, inline evaluation, examples in comments that run with a click, a REPL, and help with setting up Idris 2. It runs on the compiler's IDE mode or on a language server.",
   "version": "0.1.0",
   "publisher": "etairi",
   "license": "MIT",
